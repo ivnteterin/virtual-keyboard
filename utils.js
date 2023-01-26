@@ -15,11 +15,17 @@ export const addRows = (numberOfRows, keyboard, data) => {
 };
 
 export const makeActive = (btn) => {
-  if (btn) btn.style.background = 'linear-gradient(45deg, #d9defc , #d3f0f5)';
+  if (btn) {
+    btn.style.background = 'linear-gradient(45deg, #d9defc , #d3f0f5)';
+    btn.style.outline = '1px solid black';
+  }
 };
 
 export const makeInactive = (btn) => {
-  if (btn) btn.style.background = 'unset';
+  if (btn) {
+    btn.style.background = 'unset';
+    btn.style.outline = 'unset';
+  }
 };
 
 export const addRow = (row, parent, btns) => {
@@ -78,3 +84,14 @@ export const addRow = (row, parent, btns) => {
     parent.appendChild(btn);
   }
 };
+
+export const altGrInstance = document.createElement('div');
+altGrInstance.style.cssText = `
+    float:left;
+    opacity:0.5;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size:.7rem;
+  `;
+altGrInstance.innerHTML = `<p>AltGr (Alt Graph) is interpreted by Windows as <span style="padding:.2rem .3rem; border:1px solid gray; border-radius: 3px;">Ctrl</span>&nbsp;+&nbsp;<span style="padding:.2rem .3rem;  border:1px solid gray; border-radius: 3px;" >Alt</span>.</p>`;
+
+export default altGrInstance;
