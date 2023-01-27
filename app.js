@@ -9,6 +9,7 @@ import {
   makeInactive,
   btns,
   altGrInstance,
+  langChange,
 } from './utils.js';
 
 window.onload = addVirtualKeyboard;
@@ -17,12 +18,14 @@ function addVirtualKeyboard() {
   document.body.style.cssText = `
     margin: 0 auto;
     padding-top: 3rem;
+    position:relative;
     box-sizing: border-box;
-    width:85%;`;
+    width:75%;`;
 
   document.body.appendChild(screen);
   document.body.appendChild(keyboardBody);
   document.body.appendChild(footer);
+  document.body.appendChild(langChange);
 
   addRows(Object.keys(data).length, keyboardBody, data);
 

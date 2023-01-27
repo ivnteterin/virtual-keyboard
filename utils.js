@@ -87,11 +87,38 @@ export const addRow = (row, parent, btns) => {
 
 export const altGrInstance = document.createElement('div');
 altGrInstance.style.cssText = `
-    float:left;
     opacity:0.5;
+    display:block;
     font-family: 'Trebuchet MS', sans-serif;
     font-size:.7rem;
   `;
-altGrInstance.innerHTML = `<p>AltGr (Alt Graph) is interpreted by Windows as <span style="padding:.2rem .3rem; border:1px solid gray; border-radius: 3px;">Ctrl</span>&nbsp;+&nbsp;<span style="padding:.2rem .3rem;  border:1px solid gray; border-radius: 3px;" >Alt</span>.</p>`;
+altGrInstance.innerHTML = `<p style=" font-size:1.1vw;display:inline-block;">AltGr (Alt Graph) is interpreted by Windows as <span style="padding:.2rem .3rem; border:1px solid gray; border-radius: 3px;">Ctrl</span>&nbsp;+&nbsp;<span style="padding:.2rem .3rem;  border:1px solid gray; border-radius: 3px;" >Alt</span></p>`;
 
-export default altGrInstance;
+export const langChange = document.createElement('div');
+langChange.style.cssText = `
+    opacity:0.5;
+    display:inline-block;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size:1.1vw;
+  `;
+langChange.innerHTML = `<p style="font-size:1.1vw; display:inline-block;margin:0">English (UK). Change keyboard language by pressing <span style="padding:.2rem .3rem; border:1px solid gray; border-radius: 3px;">Left Alt</span>&nbsp;+&nbsp;<span style="padding:.2rem .3rem; border:1px solid gray; border-radius: 3px;">Shift</span></p>`;
+
+let firstButtonClicked = false;
+let secondButtonClicked = false;
+
+// function changeLang() {
+//   firstButtonClicked = false;
+//   secondButtonClicked = false;
+//   console.log(
+//     'this is your function you want to run only after 2 button is clicked'
+//   );
+// }
+
+// button_1.addEventListener('click', () => {
+//   firstButtonClicked = true;
+//   if (firstButtonClicked && secondButtonClicked) changeLang();
+// });
+// button_2.addEventListener('click', () => {
+//   secondButtonClicked = true;
+//   if (firstButtonClicked && secondButtonClicked) changeLang();
+// });

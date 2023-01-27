@@ -7,6 +7,8 @@ screen.style.cssText = `
   width: 100%;
   min-height: 7.5rem;
   box-sizing: border-box;
+  font-size:1.5rem;
+  font-family: 'Courier New', monospace;
   border-radius: .5rem;
   caret-color: transparent;
   background: #eee;
