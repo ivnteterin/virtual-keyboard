@@ -13,7 +13,7 @@ let shiftIsPushed = false;
 let capsLockIsPushed = false;
 let tabPushed = false;
 let ctrlIsPushed = false;
-let langId = 1;
+let langId = localStorage.getItem('langId');
 let btns = [];
 let typeIndex = 0;
 let currIndent = 0;
@@ -26,9 +26,12 @@ function changeLang() {
   altPushed = false;
   shiftIsPushed = false;
   langId = langId === 1 ? 2 : 1;
-  misc.langChange.innerHTML = misc.langChange.innerHTML.includes('English')
-    ? misc.changeLangDesc('Lithuanian (LT)')
-    : misc.changeLangDesc('English (UK)');
+  localStorage.setItem('langId', langId);
+  if (langId > 1) {
+    misc.langChange.innerHTML = misc.changeLangDesc('Lithuanian (LT)');
+  } else {
+    misc.langChange.innerHTML = misc.changeLangDesc('English (UK)');
+  }
 
   // console.log('langId ' + langId);
   btns = utils.addRows(Object.keys(data).length, keyboardBody, data, langId);
@@ -45,7 +48,10 @@ function addVirtualKeyboard() {
   document.body.appendChild(screenArea);
   document.body.appendChild(keyboardBody);
   document.body.appendChild(footer);
-  misc.langChange.innerHTML = misc.changeLangDesc('English (UK)');
+  misc.langChange.innerHTML =
+    langId > 1
+      ? misc.changeLangDesc('Lithuania (LT)')
+      : misc.changeLangDesc('English (UK)');
   document.body.appendChild(misc.langChange);
   document.body.appendChild(screenTooSmall);
 
