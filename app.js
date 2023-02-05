@@ -13,7 +13,7 @@ let shiftIsPushed = false;
 let capsLockIsPushed = false;
 let tabPushed = false;
 let ctrlIsPushed = false;
-let langId = localStorage.getItem('langId');
+let langId = localStorage.getItem('langId') || 1;
 let btns = [];
 let typeIndex = 0;
 let currIndent = 0;
@@ -50,7 +50,7 @@ function addVirtualKeyboard() {
   document.body.appendChild(footer);
   misc.langChange.innerHTML =
     langId > 1
-      ? misc.changeLangDesc('Lithuania (LT)')
+      ? misc.changeLangDesc('Lithuanian (LT)')
       : misc.changeLangDesc('English (UK)');
   document.body.appendChild(misc.langChange);
   document.body.appendChild(screenTooSmall);
