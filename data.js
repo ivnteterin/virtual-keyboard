@@ -3,7 +3,6 @@ export default {
     1: {
       lang1: '`',
       key: 'Backquote',
-      lang1: '`',
       lang2: '`',
       shift1: '¬',
       shift2: '~',
