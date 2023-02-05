@@ -23,7 +23,7 @@ screen.style.cssText = `
 `;
 
 const imgCopy = document.createElement('img');
-imgCopy.setAttribute('src', '/icons/copy.svg');
+imgCopy.setAttribute('src', './icons/copy.svg');
 imgCopy.id = 'copy';
 
 imgCopy.style.cssText = `
