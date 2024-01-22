@@ -1,4 +1,4 @@
-# Virtual Keyboard
+## Virtual Keyboard
 
  This project is a simple virtual keyboard using mainly JS only.
  \
@@ -7,7 +7,7 @@
  Demo: https://ivnteterin.github.io/virtual-keyboard/
  
 
-## Project Structure
+### Project Structure
 
 The project structure is organized as follows:
 
@@ -28,7 +28,7 @@ The project structure is organized as follows:
 - **screen.js**: JavaScript file for managing the keyboard screen.
 - **utils.js**: Utility JavaScript file.
 
-## Getting Started
+### Getting Started
 
 To get started with the Virtual Keyboard Mini Project locally, follow these steps:
 
@@ -36,7 +36,7 @@ To get started with the Virtual Keyboard Mini Project locally, follow these step
 2. Navigate to the project directory: `cd Virtual-Keyboard`
 3. Open `index.html` in your preferred web browser.
 
-## Features
+### Features
 
 - Simple virtual keyboard implementation.
 - Icon files for a visually appealing user interface.
