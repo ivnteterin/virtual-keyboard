@@ -1,4 +1,4 @@
-# Virtual Keyboard Mini Project
+# Virtual Keyboard
 
  This project is a simple virtual keyboard using mainly JS only.
  \
