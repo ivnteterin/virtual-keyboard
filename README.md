@@ -1,6 +1,11 @@
 # Virtual Keyboard Mini Project
 
  This project is a simple virtual keyboard using mainly JS only.
+ \
+<kbd><img width="500" alt="image" src="https://github.com/ivnteterin/virtual-keyboard/assets/79375552/1db8f114-c241-45f4-ba26-adc75ff3d4cf"></kbd>
+
+ Demo: https://ivnteterin.github.io/virtual-keyboard/
+ 
 
 ## Project Structure
 
